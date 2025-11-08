@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/productCL"
+    >
+
+    <ImageView
+        android:id="@+id/oil_img"
+        android:layout_width="312dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="31dp"
+        android:src="@drawable/oil_img"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchTV"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="102dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:text="offical store"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/oil_img"
+        app:layout_constraintTop_toBottomOf="@+id/oil_img" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="105dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#0418CC"
+        android:gravity="center"
+        android:text="free delivery"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:lineSpacingExtra="3dp"
+        android:text="Discusses the factors that make a logo successful by analyzing the research, brainstorming, sketching, and stylistic experiments that led to its development"
+        android:textColor="#5A5858"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/oil_img" />
+
+    <TextView
+        android:id="@+id/new_priceTW"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:text="120$"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/old_priceTW"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:text="149$"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/new_priceTW"
+        app:layout_constraintTop_toTopOf="@+id/new_priceTW"
+        android:layout_marginStart="5dp"/>
+        <View
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:background="#626161"
+            app:layout_constraintStart_toStartOf="@id/old_priceTW"
+            app:layout_constraintEnd_toEndOf="@id/old_priceTW"
+            app:layout_constraintTop_toTopOf="@id/old_priceTW"
+            app:layout_constraintBottom_toBottomOf="@id/old_priceTW"
+            />
+
+    <TextView
+        android:id="@+id/searchTV"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="6dp"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="search"
+        android:textColor="#B9B9B9"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cart_iconIM"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:src="@drawable/__icon__shopping_cart_"
+        app:layout_constraintBottom_toBottomOf="@+id/searchTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchTV"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/offerTV"
+        android:layout_width="332dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#FFBE5B"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Offers"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/old_priceTW"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16sp"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:src="@drawable/home_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/offerTV" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/call_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/AddToCartBTN" />
+
+    <Button
+        android:id="@+id/AddToCartBTN"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:background="@drawable/button_shape"
+        android:paddingStart="68dp"
+        android:paddingEnd="68dp"
+        android:text="Add To Cart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/offerTV" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/item_background"
+        app:layout_constraintBottom_toTopOf="@+id/AddToCartBTN"
+        app:layout_constraintEnd_toEndOf="@+id/offerTV"
+        app:layout_constraintTop_toBottomOf="@+id/offerTV"
+        android:elevation="2dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="16dp"
+            android:drawableLeft="@drawable/arrow_icon"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:text="Various Installment Options"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="16dp"
+            android:drawableLeft="@drawable/arrow_icon"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:text="Monthly Installment"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="10dp"
+            android:drawableLeft="@drawable/arrow_icon"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:text="Jumia Birthday"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
